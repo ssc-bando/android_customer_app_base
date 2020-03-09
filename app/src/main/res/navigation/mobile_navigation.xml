@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
             app:destination="@id/nav_home_second" />
+        <action
+            android:id="@+id/action_nav_home_to_showFlyerFragment"
+            app:destination="@id/showFlyerFragment" />
     </fragment>
     <fragment
         android:id="@+id/nav_home_second"
@@ -40,4 +43,9 @@
         android:name="com.example.customerapplicationbase.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/showFlyerFragment"
+        android:name="com.example.customerapplicationbase.ui.flyer.ShowFlyerFragment"
+        android:label="fragment_showflyer"
+        tools:layout="@layout/fragment_showflyer" />
 </navigation>
