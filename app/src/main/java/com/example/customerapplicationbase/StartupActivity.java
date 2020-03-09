@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 
 import com.example.customerapplicationbase.ui.home.HomeFragment;
+import com.example.customerapplicationbase.ui.register.RegsiterProgressActivity;
+import com.example.customerapplicationbase.ui.register.ShowPermissionFragment;
 
 public class StartupActivity extends AppCompatActivity {
 
@@ -19,12 +21,13 @@ public class StartupActivity extends AppCompatActivity {
 
     public void onTestExistedUserButtonClicked(View view) {
         Log.d("TAG", "test:existed user");
-        //Intent intent = new Intent(this, MainActivity.class);
         Intent intent = new Intent(this, LoggingInActivity.class);
         startActivity(intent);
     }
 
     public void onTestNewUserButtonClicked(View view) {
         Log.d("TAG", "test:new user");
+        Intent intent = new Intent(this, RegsiterProgressActivity.class);
+        startActivity(intent);
     }
 }

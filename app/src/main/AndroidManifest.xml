@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoggingInActivity"></activity>
+        <activity android:name=".ui.register.RegsiterProgressActivity"></activity>
+        <activity android:name=".LoggingInActivity" />
         <activity android:name=".StartupActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
