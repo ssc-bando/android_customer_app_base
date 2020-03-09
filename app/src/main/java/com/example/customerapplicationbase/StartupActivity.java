@@ -19,7 +19,8 @@ public class StartupActivity extends AppCompatActivity {
 
     public void onTestExistedUserButtonClicked(View view) {
         Log.d("TAG", "test:existed user");
-        Intent intent = new Intent(this, MainActivity.class);
+        //Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, LoggingInActivity.class);
         startActivity(intent);
     }
 
