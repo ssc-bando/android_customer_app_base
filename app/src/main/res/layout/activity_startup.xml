@@ -6,4 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".StartupActivity">
 
+    <Button
+        android:id="@+id/button_test_startup_with_existed_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onTestExistedUserButtonClicked"
+        android:text="既存ユーザ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_test_startup_with_new_user"
+        android:layout_width="107dp"
+        android:layout_height="47dp"
+        android:onClick="onTestNewUserButtonClicked"
+        android:text="新規ユーザ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_test_startup_with_existed_user" />
 </androidx.constraintlayout.widget.ConstraintLayout>
